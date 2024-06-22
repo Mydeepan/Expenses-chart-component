@@ -1,0 +1,328 @@
+/* Reset Stylesheet */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*  variable*/
+:root{
+    --BOX_SHADOW:rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* body Style */
+    --B_BG_COLOR:rgba(255, 228, 196, 0.957);
+    --B_WIDTH:100%;
+    --B_HEIGHT:100VH;
+    --B_FS:1rem;
+    --B_PAD:4px;
+    --FW:400;
+
+    /* Container  */
+    --C_WIDTH:600px;
+    --C_HEIGTH:auto;
+
+    /* header-tag style */
+    --H_BG_COLOR:hsl(10, 79%, 65%);
+    --H_COLOR_TEXT:hsl(27, 66%, 92%);
+    --M_B:6px;
+    --H_PAD:10px;
+    --BORDER-R:5px;
+
+    /* main-tag style */
+    --M_BG_COLOR:hsl(33, 100%, 98%);
+    --M_TOP:10px;
+    --M_HEIGTH:240px;
+    --M_WEEK_Cyan: hsl(186, 34%, 60%);
+
+    /* Mobile display d-374*/
+    --C_MOBILE-WIDTH:340px;
+    /* Mobile display d-430*/
+    --C_MOBILE-WIDTH-14:430px;
+}
+
+/* style web page */
+body{
+    width: var(--B_WIDTH);
+    height: var(--B_HEIGHT);
+    font-size: var(--B_FS);
+    padding: var(--B_PAD);
+    background-color:var(--B_BG_COLOR);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width:var(--C_WIDTH) ;
+    height: var(--C_HEIGTH);
+    margin-bottom: var(--M_B);
+}
+.header{
+    background-color:var(--H_BG_COLOR) ;
+    color: var(--H_COLOR_TEXT);
+    padding: var(--H_PAD);
+    border-radius: var(--BORDER-R);
+}
+.header h4{
+    font-weight: var(--FW);
+    margin-bottom:var(--M_B);
+}
+main{
+    background-color: var(--M_BG_COLOR);
+    border-radius: var(--BORDER-R);
+    margin-top: var(--M_TOP);
+}
+main h3{
+    padding: var(--H_PAD);
+    margin-bottom: var(--M_B);
+}
+main .week-spend{
+    height: var(--M_HEIGTH);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    border-bottom: 1.5px solid #aaa;
+    padding: var(--M_B);
+}
+main .week-spend >div{
+    margin-bottom: var(--M_B);
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    cursor: pointer;
+}
+main .week-spend .week{
+    box-shadow: var(--BOX_SHADOW);
+}
+main .week-spend .mon{
+    margin-bottom: var(--M_B);
+    background-color:var(--H_BG_COLOR);
+    border-radius: var(--BORDER-R);
+    width:  40px;
+    height: 10vh;
+}
+main .week-spend .tue{
+    margin-bottom: var(--M_B);
+    background-color:var(--H_BG_COLOR);
+    border-radius: var(--BORDER-R);
+    width:  40px;
+    height: 16vh;
+}
+main .week-spend .wed{
+    margin-bottom: var(--M_B);
+    background-color:var(--M_WEEK_Cyan);
+    border-radius: var(--BORDER-R);
+    width:  40px;
+    height: 20vh;
+}
+main .week-spend .thu{
+    margin-bottom: var(--M_B);
+    background-color:var(--H_BG_COLOR);
+    border-radius: var(--BORDER-R);
+    width:  40px;
+    height: 16vh;
+}
+main .week-spend .fri{
+    margin-bottom: var(--M_B);
+    background-color:var(--H_BG_COLOR);
+    border-radius: var(--BORDER-R);
+    width: 40px;
+    height: 10vh;
+}
+main .week-spend .sat{
+    margin-bottom: var(--M_B);
+    background-color:var(--H_BG_COLOR);
+    border-radius: var(--BORDER-R);
+    width:  40px;
+    height: 17vh;
+}
+main .week-spend .sun{
+    margin-bottom: var(--M_B);
+    background-color:var(--H_BG_COLOR);
+    border-radius: var(--BORDER-R);
+    width:  40px;
+    height: 10vh;
+}
+main .week-spend >div span{
+    margin-top: var(--M_B);
+    font-size: 13px;
+    color: #aaa;
+}
+
+main .week-spend .money{
+    margin-bottom: var(--M_TOP);
+    font-size: 10px;
+    background-color: #333;
+    padding: var(--B_PAD);
+    border-radius: var(--BORDER-R);
+    color: var(--H_COLOR_TEXT);
+}
+.hidden{
+    display: none;
+}
+main .week-spend .week:hover{
+    transform: scale(1.05);
+}
+
+.totalSpend{
+    display: flex;
+    justify-content: space-between;
+    margin: var(--M_TOP);
+}
+.totalSpend p{
+    font-size: 13px;
+    margin-bottom: var(--M_TOP);
+}
+
+@media screen and (max-width:375px) {
+    body {
+            width: 370px;
+            height: 844px;
+            font-size: var(--B_FS);
+            padding: var(--B_PAD);
+            background-color: var(--B_BG_COLOR);
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .container {
+            width: 360px;
+            height: auto;
+            margin-bottom: var(--M_B);
+        }
+    
+        .header {
+            background-color: var(--H_BG_COLOR);
+            color: var(--H_COLOR_TEXT);
+            padding: var(--H_PAD);
+            border-radius: var(--BORDER-R);
+        }
+    
+        .header h4 {
+            font-weight: var(--FW);
+            margin-bottom: var(--M_B);
+        }
+    
+        main {
+            background-color: var(--M_BG_COLOR);
+            border-radius: var(--BORDER-R);
+            margin-top: var(--M_TOP);
+        }
+    
+        main h3 {
+            margin-top: var(--M_TOP);
+            font-size: 1.4rem;
+            padding: var(--H_PAD);
+            margin-bottom: var(--M_B);
+        }
+    
+        main .week-spend {
+            height: 200px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            border-bottom: 1.5px solid #aaa;
+            padding: var(--M_B);
+        }
+    
+        main .week-spend>div {
+            margin-bottom: var(--M_B);
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            cursor: pointer;
+        }
+    
+        main .week-spend .week {
+            box-shadow: var(--BOX_SHADOW);
+        }
+    
+        main .week-spend .mon {
+            margin-bottom: var(--M_B);
+            background-color: var(--H_BG_COLOR);
+            border-radius: var(--BORDER-R);
+            width: 33px;
+            height: 10vh;
+        }
+    
+        main .week-spend .tue {
+            margin-bottom: var(--M_B);
+            background-color: var(--H_BG_COLOR);
+            border-radius: var(--BORDER-R);
+            width: 33px;
+            height: 16vh;
+        }
+    
+        main .week-spend .wed {
+            margin-bottom: var(--M_B);
+            background-color: var(--M_WEEK_Cyan);
+            border-radius: var(--BORDER-R);
+            width: 33px;
+            height: 20vh;
+        }
+    
+        main .week-spend .thu {
+            margin-bottom: var(--M_B);
+            background-color: var(--H_BG_COLOR);
+            border-radius: var(--BORDER-R);
+            width: 33px;
+            height: 16vh;
+        }
+    
+        main .week-spend .fri {
+            margin-bottom: var(--M_B);
+            background-color: var(--H_BG_COLOR);
+            border-radius: var(--BORDER-R);
+            width: 33px;
+            height: 10vh;
+        }
+    
+        main .week-spend .sat {
+            margin-bottom: var(--M_B);
+            background-color: var(--H_BG_COLOR);
+            border-radius: var(--BORDER-R);
+            width: 33px;
+            height: 17vh;
+        }
+    
+        main .week-spend .sun {
+            margin-bottom: var(--M_B);
+            background-color: var(--H_BG_COLOR);
+            border-radius: var(--BORDER-R);
+            width: 33px;
+            height: 10vh;
+        }
+    
+        main .week-spend>div span {
+            margin-top: var(--M_B);
+            font-size: 10px;
+            color: #aaa;
+        }
+    
+        main .week-spend .money {
+            margin-bottom: var(--M_TOP);
+            font-size: 9px;
+            background-color: #333;
+            padding: var(--B_PAD);
+            border-radius: var(--BORDER-R);
+            color: var(--H_COLOR_TEXT);
+        }
+    
+        .hidden {
+            display: none;
+        }
+        .totalSpend {
+            display: flex;
+            justify-content: space-between;
+            margin: var(--M_TOP);
+        }
+    
+        .totalSpend p {
+            font-size: 13px;
+            margin-bottom: var(--M_TOP);
+        }
+    
+}
