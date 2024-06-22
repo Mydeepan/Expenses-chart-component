@@ -174,10 +174,9 @@ main .week-spend .week:hover{
     margin-bottom: var(--M_TOP);
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:400px) {
     body {
-            width: 370px;
-            height: 844px;
+            width: 390px;
             font-size: var(--B_FS);
             padding: var(--B_PAD);
             background-color: var(--B_BG_COLOR);
@@ -188,9 +187,8 @@ main .week-spend .week:hover{
         }
     
         .container {
-            width: 360px;
+            width:250px;
             height: auto;
-            margin-bottom: var(--M_B);
         }
     
         .header {
@@ -244,7 +242,7 @@ main .week-spend .week:hover{
             margin-bottom: var(--M_B);
             background-color: var(--H_BG_COLOR);
             border-radius: var(--BORDER-R);
-            width: 33px;
+            width: 22px;
             height: 10vh;
         }
     
@@ -252,7 +250,7 @@ main .week-spend .week:hover{
             margin-bottom: var(--M_B);
             background-color: var(--H_BG_COLOR);
             border-radius: var(--BORDER-R);
-            width: 33px;
+            width: 22px;
             height: 16vh;
         }
     
@@ -260,7 +258,7 @@ main .week-spend .week:hover{
             margin-bottom: var(--M_B);
             background-color: var(--M_WEEK_Cyan);
             border-radius: var(--BORDER-R);
-            width: 33px;
+            width: 22px;
             height: 20vh;
         }
     
@@ -268,7 +266,7 @@ main .week-spend .week:hover{
             margin-bottom: var(--M_B);
             background-color: var(--H_BG_COLOR);
             border-radius: var(--BORDER-R);
-            width: 33px;
+            width: 22px;
             height: 16vh;
         }
     
@@ -276,7 +274,7 @@ main .week-spend .week:hover{
             margin-bottom: var(--M_B);
             background-color: var(--H_BG_COLOR);
             border-radius: var(--BORDER-R);
-            width: 33px;
+            width: 22px;
             height: 10vh;
         }
     
@@ -284,7 +282,7 @@ main .week-spend .week:hover{
             margin-bottom: var(--M_B);
             background-color: var(--H_BG_COLOR);
             border-radius: var(--BORDER-R);
-            width: 33px;
+            width: 22px;
             height: 17vh;
         }
     
@@ -292,7 +290,7 @@ main .week-spend .week:hover{
             margin-bottom: var(--M_B);
             background-color: var(--H_BG_COLOR);
             border-radius: var(--BORDER-R);
-            width: 33px;
+            width: 22px;
             height: 10vh;
         }
     
